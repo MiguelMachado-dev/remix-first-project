@@ -486,26 +486,20 @@ var routes_exports = {};
 __export(routes_exports, {
   default: () => Index
 });
+var import_react_router_dom = require("react-router-dom");
+var import_react8 = require("react");
 function Index() {
+  const navigate = (0, import_react_router_dom.useNavigate)();
+  (0, import_react8.useEffect)(() => {
+    navigate("/github/MiguelMachado-dev");
+  }, [navigate]);
   return /* @__PURE__ */ React.createElement("div", {
     style: { fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }
-  }, /* @__PURE__ */ React.createElement("h1", null, "Welcome to Remix"), /* @__PURE__ */ React.createElement("ul", null, /* @__PURE__ */ React.createElement("li", null, /* @__PURE__ */ React.createElement("a", {
-    target: "_blank",
-    href: "https://remix.run/tutorials/blog",
-    rel: "noreferrer"
-  }, "15m Quickstart Blog Tutorial")), /* @__PURE__ */ React.createElement("li", null, /* @__PURE__ */ React.createElement("a", {
-    target: "_blank",
-    href: "https://remix.run/tutorials/jokes",
-    rel: "noreferrer"
-  }, "Deep Dive Jokes App Tutorial")), /* @__PURE__ */ React.createElement("li", null, /* @__PURE__ */ React.createElement("a", {
-    target: "_blank",
-    href: "https://remix.run/docs",
-    rel: "noreferrer"
-  }, "Remix Docs"))));
+  }, /* @__PURE__ */ React.createElement("h1", null, "Redirecting to github"));
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { "version": "ade9c229", "entry": { "module": "/build/entry.client-5ITFGA3N.js", "imports": ["/build/_shared/chunk-2LKANNDY.js", "/build/_shared/chunk-RKOYF2NQ.js", "/build/_shared/chunk-OGYP3M3B.js"] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "module": "/build/root-NSLMYPR7.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/github.$username": { "id": "routes/github.$username", "parentId": "root", "path": "github/:username", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/github.$username-BRXJLFCW.js", "imports": void 0, "hasAction": false, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": true }, "routes/github.$username/$repoName": { "id": "routes/github.$username/$repoName", "parentId": "routes/github.$username", "path": ":repoName", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/github.$username/$repoName-BPNQC2VR.js", "imports": void 0, "hasAction": false, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/index": { "id": "routes/index", "parentId": "root", "path": void 0, "index": true, "caseSensitive": void 0, "module": "/build/routes/index-EXVEA7F4.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false } }, "url": "/build/manifest-ADE9C229.js" };
+var assets_manifest_default = { "version": "3b2cbe4d", "entry": { "module": "/build/entry.client-LQPHACWF.js", "imports": ["/build/_shared/chunk-UYXPHHU7.js", "/build/_shared/chunk-T54RIBA2.js", "/build/_shared/chunk-YHDGIHJG.js"] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "module": "/build/root-XZJCSJ7W.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/github.$username": { "id": "routes/github.$username", "parentId": "root", "path": "github/:username", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/github.$username-267K2EQG.js", "imports": void 0, "hasAction": false, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": true }, "routes/github.$username/$repoName": { "id": "routes/github.$username/$repoName", "parentId": "routes/github.$username", "path": ":repoName", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/github.$username/$repoName-233BOJ2E.js", "imports": void 0, "hasAction": false, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/index": { "id": "routes/index", "parentId": "root", "path": void 0, "index": true, "caseSensitive": void 0, "module": "/build/routes/index-JFKSJZ2Z.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false } }, "url": "/build/manifest-3B2CBE4D.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var entry = { module: entry_server_exports };
@@ -550,3 +544,4 @@ module.exports = __toCommonJS(stdin_exports);
   entry,
   routes
 });
+//# sourceMappingURL=index.js.map
