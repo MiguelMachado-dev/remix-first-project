@@ -1,0 +1,44 @@
+{
+  "name": "remix-template-remix",
+  "private": true,
+  "description": "",
+  "license": "",
+  "sideEffects": false,
+  "scripts": {
+    "build": "npm run build:css && remix build",
+    "build:css": "tailwindcss -i ./app/styles/tailwind.css -o ./app/tailwind.css",
+    "dev": "concurrently \"node -r dotenv/config\" \"npm run dev:css\" \"remix dev\"",
+    "dev:css": "tailwindcss -i ./app/styles/tailwind.css -o ./app/tailwind.css --watch",
+    "start": "remix-serve build"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.5.0",
+    "@heroicons/react": "^1.0.6",
+    "@remix-run/node": "^1.4.0",
+    "@remix-run/react": "^1.4.0",
+    "@remix-run/serve": "^1.4.0",
+    "@tailwindcss/forms": "^0.5.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "tiny-invariant": "^1.2.0"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^1.4.0",
+    "@remix-run/eslint-config": "^1.4.0",
+    "@types/react": "^17.0.24",
+    "@types/react-dom": "^17.0.9",
+    "concurrently": "^7.1.0",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "^8.11.0",
+    "tailwindcss": "^3.0.24",
+    "typescript": "^4.5.5"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
